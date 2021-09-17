@@ -1,0 +1,8 @@
+logs
+package-lock.json
+yarn.lock
+*.log
+node_modules/
+.env
+.env.test
+.env.production
