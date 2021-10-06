@@ -1,0 +1,20 @@
+{
+  "name": "bookbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rv",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.5.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.22.0",
+    "discord.js": "^13.1.0",
+    "pyx-error-log": "^1.0.0",
+    "request-promise": "^4.2.6",
+    "signale": "^1.4.0"
+  }
+}
