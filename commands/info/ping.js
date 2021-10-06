@@ -6,6 +6,6 @@ module.exports = {
 		.setName('ping')
 		.setDescription('Get the bot latency.'),
 	async execute(interaction) {
-	interaction.reply(`🏓Latency is ${Date.now() - message.createdTimestamp}ms`);
+	interaction.reply(`yes, test cmd`);
 	},
 };
