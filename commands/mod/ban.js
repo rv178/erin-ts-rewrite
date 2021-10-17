@@ -9,9 +9,8 @@ module.exports = {
                 .setDescription('The user to ban.')
                 .setRequired(true)),
 	async execute(interaction) {
-        const member = interaction.options.getMember('user');
-        member.ban();
-
-	    interaction.reply(`${member} has been banned.`);
+        	const member = interaction.options.getMember('user');
+		member.ban();
+		interaction.reply(`${member} has been banned.`);
 	},
 };
