@@ -1,12 +1,12 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed, Message } = require('discord.js');
-const client = require("../../index.js")
+
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ping')
 		.setDescription('Get the bot latency.'),
 	async execute(interaction) {
+		const sent = await interaction.reply({ content: 'Pinging...', fetchReply: true });
 
-	interaction.reply("Ping Pong")
-},
+		interaction.editReply(`Latency: ${sent.createdTimestamp - interaction.createdTimestamp}ms`);
+	},
 };
