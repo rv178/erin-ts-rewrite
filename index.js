@@ -2,6 +2,7 @@ require('pyx-error-log');
 
 const { Client, Collection, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+client.config = require("./config")
 client.commands = new Collection();
 
 const signale = require('signale');
@@ -37,3 +38,5 @@ client.on('interactionCreate', async interaction => {
 });
 
 client.login(token);
+
+module.exports = client;
