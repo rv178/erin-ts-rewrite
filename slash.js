@@ -1,5 +1,5 @@
 require('pyx-error-log');
-
+const client = require("./index")
 const signale = require('signale');
 
 const { REST } = require('@discordjs/rest');
@@ -19,8 +19,8 @@ fs.readdirSync("./commands").forEach(dir => {
 }
 })
 
-const clientId = '783917758621679647';
-const guildId = '802910284268306492';
+const clientId = client.user.id
+const guildId = client.config.guildid
 
 const rest = new REST({ version: '9' }).setToken(token);
 
