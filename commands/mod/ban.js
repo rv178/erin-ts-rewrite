@@ -10,7 +10,7 @@ module.exports = {
                 .setRequired(true)),
 	async execute(interaction) {
         const member = interaction.options.getMember('user');
-        guild.members.ban(member);
+        member.ban();
 
 	    interaction.reply(`${member} has been banned.`);
 	},
