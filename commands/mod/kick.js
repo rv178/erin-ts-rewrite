@@ -9,9 +9,8 @@ module.exports = {
                 .setDescription('The user to kick.')
                 .setRequired(true)),
 	async execute(interaction) {
-        const member = interaction.options.getMember('user');
-        member.kick();
-
-	    interaction.reply(`${member} has been kicked.`);
+        	const member = interaction.options.getMember('user');
+        	member.kick();
+	    	interaction.reply(`${member} has been kicked.`);
 	},
 };
